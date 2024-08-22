@@ -6,7 +6,9 @@
 
 <h3>One users:</h3>
  <p>Usename: {{ oneuser|upper }}</p>
-
+<script>
+    alert('{{ oneuser }}');
+</script>
 <button><a href="/todolist/showallusers">Back</a></button>
 {% include 'todolist/ok.html' %}
 {% endblock oneusers %}
