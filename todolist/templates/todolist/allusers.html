@@ -1,0 +1,19 @@
+{% extends "todolist/base.html" %}
+
+{% block title %}All users{% endblock title %}
+
+{% block users %}
+
+<h3>All users:</h3>
+{% for alluser in allusers %}
+    <li>{{forloop.counter}}. <a href="{% url 'showaoneuser' alluser.id %}">{{ alluser|title }}</a></li>
+{% empty %}
+    <li>Sorry empty users list!</li>
+{% endfor %}
+<button><a href="/todolist/base">Back</a></button>
+
+{% include 'todolist/ok.html' %}
+{% endblock users %}
+
+
+
