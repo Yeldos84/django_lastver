@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body style="margin:20px">
+    <h1>{{html_name}}</h1>
+
+    <form style="display:flex; gap: 10px; align-items: center" action="#" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+    <br>
+</body>
+</html>

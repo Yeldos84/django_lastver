@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+<!--    <ul>-->
+<!--        <li><a href="author">Author</a></li>-->
+<!--        <li><a href="book">Book</a></li>-->
+<!--        <li><a href="publisher">Publisher</a></li>-->
+<!--        <p>{{ name_class }}</p>-->
+
+
+<!--    </ul>-->
+    <ul>
+        {% for name in name_class %}
+            <li><a href="{{ name|lower }}">{{name}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
